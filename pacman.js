@@ -31,6 +31,7 @@ var Clyde = {
   character: 'Pokey',
   edible: false
 };
+ghosts = ['Inky','Blinky','Pinky','Clyde'];
 
 // Draw the screen functionality
 function drawScreen() {
