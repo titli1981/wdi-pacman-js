@@ -3,6 +3,34 @@ var score = 0;
 var lives = 2;
 
 // Define your ghosts here
+var inky = {
+  name: 'Inky',
+  menu_option: '1',
+  color: 'Red',
+  character: 'Shadow',
+  edible: false
+};
+var blinky = {
+    name:'Blinky',
+    menu_option: '2',
+    color: 'Cyan',
+    character: 'Speedy',
+    edible: false
+};
+var pinky = {
+  name: 'Pinky',
+  menu_option: '3',
+  color: 'Pink',
+  character: 'Bashful',
+  edible: false
+};
+var Clyde = {
+  name: 'Inky',
+  menu_option: '4',
+  color: 'Orange',
+  character: 'Pokey',
+  edible: false
+};
 
 // Draw the screen functionality
 function drawScreen() {
