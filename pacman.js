@@ -24,14 +24,14 @@ var pinky = {
   character: 'Bashful',
   edible: false
 };
-var Clyde = {
+var clyde = {
   name: 'Inky',
   menu_option: '4',
   color: 'Orange',
   character: 'Pokey',
   edible: false
 };
-ghosts = ['Inky','Blinky','Pinky','Clyde'];
+var ghosts = [inky, blinky, pinky, clyde];
 
 // Draw the screen functionality
 function drawScreen() {
@@ -54,6 +54,14 @@ function displayStats() {
 function displayMenu() {
   console.log('\n\nSelect Option:\n');  // each \n creates a new line
   console.log('(d) Eat Dot');
+  // console.log('(1)Eat Inky');
+  // console.log('(2)Eat Blinky');
+  //  console.log('(3)Eat Pinky');
+  //  console.log('(4)Eat Clyde');
+
+  for(var i = 0; i < ghosts.length; i++){
+      console.log('('+ (i+1) +') Eat ' + ghosts[i].name);
+  }
   console.log('(q) Quit');
 }
 
